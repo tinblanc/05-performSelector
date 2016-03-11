@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoSelectorTest">
+            <connections>
+                <outlet property="slider" destination="btH-ZL-PxK" id="rru-MU-WnF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="btH-ZL-PxK">
+                    <rect key="frame" x="56" y="91" width="488" height="31"/>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szs-0k-bjw">
+                    <rect key="frame" x="261" y="180" width="79" height="30"/>
+                    <state key="normal" title="Click Me"/>
+                    <connections>
+                        <action selector="onClickMe:" destination="-1" eventType="touchUpInside" id="dYs-Y2-uiZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Szs-0k-bjw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1jN-dq-yJX"/>
+                <constraint firstItem="btH-ZL-PxK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="58" id="XGx-EN-OIC"/>
+                <constraint firstItem="btH-ZL-PxK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="91" id="ptN-6Y-mqC"/>
+                <constraint firstItem="Szs-0k-bjw" firstAttribute="top" secondItem="btH-ZL-PxK" secondAttribute="bottom" constant="59" id="u1e-ie-q1W"/>
+                <constraint firstAttribute="trailing" secondItem="btH-ZL-PxK" secondAttribute="trailing" constant="58" id="yl8-M0-sVx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
